@@ -31,7 +31,7 @@ public class ProdutoDao {
     }
 
     public List<Produto> buscarTddos() {
-        String query = "select p from Produto p";
-        return this.entityManegar.createQuery(query, Produto.class).getResultList();
+        String jpql = "select p from Produto p";
+        return this.entityManegar.createQuery(jpql, Produto.class).getResultList();
     }
 }
