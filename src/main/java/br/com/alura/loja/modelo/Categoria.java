@@ -10,10 +10,10 @@ public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String mome;
+    private String nome;
 
     public Categoria(String mome) {
-        this.mome = mome;
+        this.nome = mome;
     }
 
     public Categoria() {
@@ -27,11 +27,11 @@ public class Categoria {
         this.id = id;
     }
 
-    public String getMome() {
-        return mome;
+    public String getNome() {
+        return nome;
     }
 
-    public void setMome(String mome) {
-        this.mome = mome;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
