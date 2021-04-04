@@ -24,4 +24,8 @@ public class ProdutoDao {
         produto = this.entityManegar.merge(produto);
         this.entityManegar.remove(produto);
     }
+
+    public Produto buscarPorId(long id) {
+        return this.entityManegar.find(Produto.class, id);
+    }
 }

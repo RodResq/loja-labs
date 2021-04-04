@@ -13,6 +13,15 @@ public class CadastroDeProdutos {
 
 
     public static void main(String[] args) {
+        cadastrarProduto();
+
+        EntityManager em = JPAUtil.getEntityManager();
+        ProdutoDao produtoDao = new ProdutoDao(em);
+        Produto produto = produtoDao.buscarPorId(1L);
+        System.out.println(produto.getPreco());
+    }
+
+    private static void cadastrarProduto() {
         Categoria celulares = new Categoria("celulares");
         Produto celular = new Produto("Xiaomi Redmi", "Muito legal", new BigDecimal("800"), celulares);
 
