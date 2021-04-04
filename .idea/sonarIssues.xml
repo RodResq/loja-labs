@@ -23,6 +23,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/dao/ProdutoDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/loja/ProdutoDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/loja/modelo/CadastroDeProdutos.java">
           <value>
             <set />
@@ -34,6 +44,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/CadastroDeProdutos.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/loja/testes/JPAUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/br/com/alura/loja/util/JPAUtil.java">
           <value>
             <set />
           </value>
