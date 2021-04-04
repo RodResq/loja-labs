@@ -15,4 +15,14 @@ public class CategoriaDao {
     public void cadastrar(Categoria categoria) {
         entityManegar.persist(categoria);
     }
+
+    public void atualizar(Categoria categoria) {
+        this.entityManegar.merge(categoria);
+    }
+
+    public void remover(Categoria categoria) {
+        categoria = this.entityManegar.merge(categoria);
+        this.entityManegar.remove(categoria);
+    }
+
 }
