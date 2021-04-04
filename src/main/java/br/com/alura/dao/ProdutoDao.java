@@ -12,7 +12,7 @@ public class ProdutoDao {
         this.entityManegar = em;
     }
 
-    public void salva(Produto produto) {
+    public void cadastrar(Produto produto) {
         entityManegar.persist(produto);
     }
 }
