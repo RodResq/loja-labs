@@ -3,6 +3,7 @@ package br.com.alura.dao;
 import br.com.alura.loja.modelo.Produto;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 
 public class ProdutoDao {
 
@@ -27,5 +28,10 @@ public class ProdutoDao {
 
     public Produto buscarPorId(long id) {
         return this.entityManegar.find(Produto.class, id);
+    }
+
+    public List<Produto> buscarTddos() {
+        String query = "select p from Produto p";
+        return this.entityManegar.createQuery(query, Produto.class).getResultList();
     }
 }
