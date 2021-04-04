@@ -30,8 +30,15 @@ public class ProdutoDao {
         return this.entityManegar.find(Produto.class, id);
     }
 
-    public List<Produto> buscarTddos() {
+    public List<Produto> buscarPorTodos() {
         String jpql = "select p from Produto p";
         return this.entityManegar.createQuery(jpql, Produto.class).getResultList();
+    }
+
+    public List<Produto> buscarPoNome(String nome) {
+        String jpql = "select p from Produto p where p.nome = :nome";
+        return this.entityManegar.createQuery(jpql, Produto.class)
+                .setParameter("nome", nome)
+                .getResultList();
     }
 }
